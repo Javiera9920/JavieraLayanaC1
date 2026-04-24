@@ -6,11 +6,11 @@ import jakarta.validation.constraints.Min;
 import jakarta.validation.constraints.Size;
 import jakarta.validation.constraints.NotBlank;
 
-@Document(collection = "libros") // Indica que esto se guardará en la colección "libros"
+@Document(collection = "libros")
 public class Libro {
 
     @Id
-    private String id; // MongoDB generará este ID automáticamente
+    private String id;
 
     @NotBlank(message = "El título es obligatorio")
     private String titulo;
